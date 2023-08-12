@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Crawler</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="./main.js"></script>
+</head>
+
+
+<body>
+    <div class="gameContainer">
+        <h1>Dungeon Crawler</h1>
+        <div class="playerControls">
+            <input type="button" class="moveButton" id="moveUp" value="Haut">
+            <input type="button" class="moveButton" id="moveDown" value="Bas">
+            <input type="button" class="moveButton" id="moveLeft" value="Gauche">
+            <input type="button" class="moveButton" id="moveRight" value="Droite">
+        </div>
+        <div class="gameDisplay">
+            <table class="gameGrid" id="gameGrid"></table>
+            <div class="gameInfo">
+                <div class="scoreInfo">Score : <span id="score"></span></div>
+                <div class="restartButtonContainer">
+                    <input type="button" class="rectButton" id="restart" value="Réinitialiser">
+                </div>
+            </div>
+        </div>
+        <div class="gameOverPopup" id="gameOverPopup">
+            <h3><b>Partie Terminée</b></h3>
+            <div class="gameOverScore"><span id="final"></span></div>
+        </div>
+    </div>
+</body>
+
+</html>
